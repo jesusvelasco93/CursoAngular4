@@ -1,0 +1,10 @@
+<h1>Usuario {{id}}</h1>
+<hr/>
+<a [routerLink]="['Info']">Info</a>
+<a [routerLink]="['Editar']">Editar</a>
+<hr/>
+<button type="button" (click)="guardar()">Guardar</button>
+
+<hr/>
+<router-outlet></router-outlet>
+<hr/>

@@ -1,0 +1,7 @@
+<h1>Hello World!!</h1>
+<input type="text" #id (input)="muestraElemento(id)"/>
+<hr/>
+    <a [routerLink]="['']">Inicio</a>
+    <a [routerLink]="['Usuario', id.value]">Usuario</a>
+<hr/>
+<router-outlet></router-outlet>
