@@ -1,0 +1,8 @@
+<h1>Usuario {{ visible == true ? id : '****' }}</h1>
+<hr>
+<a [routerLink]="['editar']">Editar</a>
+<a [routerLink]="['info']">Info</a>
+<hr>
+<button type="button" (click)="guardar()">Guardar datos</button>
+<button type="button" (click)="irAEditar()">Ir a editar con datos guardados</button>
+<router-outlet></router-outlet>

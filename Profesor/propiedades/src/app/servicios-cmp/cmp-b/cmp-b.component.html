@@ -1,0 +1,14 @@
+<h2>CMP B</h2>
+<div>
+  <label for="dato">Dato:</label>
+  <input type="text" #dato>
+  <button type="button" (click)="guardar(dato.value)">Añadir</button>
+</div>
+<hr>
+<h3>Datos</h3>
+<ul>
+  <li *ngFor="let d of datos">{{ d }}</li>
+</ul>
+<hr>
+<h3>Dato recibido</h3>
+<p>Dato: {{ mensaje }}</p>

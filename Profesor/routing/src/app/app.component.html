@@ -1,0 +1,14 @@
+<h1>ROUTING</h1>
+<hr>
+<a [routerLink]="['']">Inicio</a>
+<input type="text" #id (input)="muestraElemento(id)">
+<a [routerLink]="['usuario', id.value]">Usuario</a>
+<a [routerLink]="['usuario', id.value]" [queryParams]="{visible: false}">Usuario invisible</a>
+<hr>
+<a [routerLink]="[{outlets: {'reg1': 'aux1'}}]">Aux1Reg1</a>
+<a [routerLink]="[{outlets: {'reg1': 'aux2'}}]">Aux2Reg1</a>
+<a [routerLink]="[{outlets: {'reg2': 'aux1'}}]">Aux1Reg2</a>
+<hr>
+<router-outlet></router-outlet>
+<router-outlet name="reg1"></router-outlet>
+<router-outlet name="reg2"></router-outlet>
